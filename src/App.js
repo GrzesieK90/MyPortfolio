@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import './App.css';
 import Technologies from './Components/Technologies/Technologies';
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar isDark={isDark} toggleTheme={toggleTheme} />
         <main className="main-content">
           <Routes>
@@ -39,7 +39,7 @@ function App() {
             <Route path='/contact' element={<Contact />} />
           </Routes>
         </main>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
