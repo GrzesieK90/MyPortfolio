@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/MyPortfolio/static/css/main.6c98ffd3.css",
+    "main.js": "/MyPortfolio/static/js/main.12670341.js",
+    "static/js/453.1407b060.chunk.js": "/MyPortfolio/static/js/453.1407b060.chunk.js",
+    "static/media/hLogoL.png": "/MyPortfolio/static/media/hLogoL.50de5d7e1fe739971240.png",
+    "static/media/hLogoD.png": "/MyPortfolio/static/media/hLogoD.faa404073d88814cd4a0.png",
+    "static/media/iShoppy.png": "/MyPortfolio/static/media/iShoppy.cc0d2dc0783cd8539ea2.png",
+    "static/media/photo.jpg": "/MyPortfolio/static/media/photo.2cb081a98ec79103d455.jpg",
+    "static/media/Face.png": "/MyPortfolio/static/media/Face.1e7eb965425d829ea028.png",
+    "static/media/CryptoChecker.png": "/MyPortfolio/static/media/CryptoChecker.1f2f0fc43dad5697ff3d.png",
+    "static/media/Clotify.png": "/MyPortfolio/static/media/Clotify.c5aa8d13f0b5d8f5395a.png",
+    "static/media/WeatherApp.png": "/MyPortfolio/static/media/WeatherApp.158cfaa9dc0c3ba3fb12.png",
+    "static/media/Warning.png": "/MyPortfolio/static/media/Warning.2dd47a5fb0648855ea36.png",
+    "static/media/Logo.png": "/MyPortfolio/static/media/Logo.fc743efb93104a2f9298.png",
+    "static/media/KittyF.png": "/MyPortfolio/static/media/KittyF.ef6106d5362b702e65b9.png",
+    "static/media/pokedexApp.png": "/MyPortfolio/static/media/pokedexApp.0104ce91746491ee746a.png",
+    "static/media/TaskFlow.png": "/MyPortfolio/static/media/TaskFlow.6602d30de1de2ea7a290.png",
+    "static/media/dancing-script-latin-400-normal.woff": "/MyPortfolio/static/media/dancing-script-latin-400-normal.a5ce473263c516dc070e.woff",
+    "static/media/dancing-script-latin-400-normal.woff2": "/MyPortfolio/static/media/dancing-script-latin-400-normal.b3f0ff28f420da0283fc.woff2",
+    "static/media/dancing-script-latin-ext-400-normal.woff": "/MyPortfolio/static/media/dancing-script-latin-ext-400-normal.87ae00f06aafc5c964ba.woff",
+    "static/media/dancing-script-latin-ext-400-normal.woff2": "/MyPortfolio/static/media/dancing-script-latin-ext-400-normal.01bd5f7f506a07d5a59f.woff2",
+    "static/media/dancing-script-vietnamese-400-normal.woff": "/MyPortfolio/static/media/dancing-script-vietnamese-400-normal.581d33ad885c19d66017.woff",
+    "static/media/dancing-script-vietnamese-400-normal.woff2": "/MyPortfolio/static/media/dancing-script-vietnamese-400-normal.389f8b05090f0e471f76.woff2",
+    "index.html": "/MyPortfolio/index.html",
+    "main.6c98ffd3.css.map": "/MyPortfolio/static/css/main.6c98ffd3.css.map",
+    "main.12670341.js.map": "/MyPortfolio/static/js/main.12670341.js.map",
+    "453.1407b060.chunk.js.map": "/MyPortfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c98ffd3.css",
+    "static/js/main.12670341.js"
+  ]
+}
