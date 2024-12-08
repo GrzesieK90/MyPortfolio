@@ -1,0 +1,167 @@
+#Con {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7vh;
+  background-color: var(--background);
+}
+
+.div1 {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.text-content {
+  grid-column: 1;
+}
+
+.image-content {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hLogo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  transition: transform 0.3s ease;
+  filter:hue-rotate(340deg)
+}
+
+.hLogo:hover {
+  transform: scale(1.05);
+}
+
+#mint {
+  color: var(--accent);
+  text-shadow: 3px 3px 1px var(--shadow);
+}
+
+#h1 {
+  margin-top: 0;
+  font-size: 3.5vw;
+}
+
+.text {
+  color: var(--text);
+  text-shadow: 3px 3px 1px var(--shadow);
+  transition: color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+h2.text {
+  font-size: 3vw;
+}
+
+h3.text {
+  font-size: 3vw;
+}
+
+.text2 {
+  font-size: 2.5vw;
+  color: var(--text);
+  text-shadow: 3px 3px 1px var(--shadow);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.text3 {
+  font-size: calc(1.2vw + 3px);
+  color: var(--text);
+  text-shadow: 3px 3px 1px var(--shadow);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.Typewriter__wrapper {
+  font-size: 2.5vw;
+  color: var(--accent);
+}
+
+.text-photo-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+#photo {
+  width: auto;
+  height: 600px;
+  border-radius: 10px;
+  border: 3px solid var(--accent);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#photo:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px var(--shadow);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .div1 {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .text-content,
+  .image-content {
+    grid-column: 1;
+  }
+
+  .hLogo {
+    max-width: 80%;
+  }
+
+  #h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .text,
+  .text2 {
+    font-size: 1.5rem;
+  }
+
+  .text3 {
+    font-size: calc(1rem + 3px);
+    text-align: center;
+  }
+
+  .text-photo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #photo {
+    height: auto;
+    width: 80%;
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .Typewriter__wrapper {
+    font-size: 20px;
+  }
+  
+  h2.text {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,259 @@
+:root {
+  /* Light Theme */
+  --light-background: #FFE4E1;
+  --light-surface: #FFFFFF;
+  --light-card: #FFFFFF;
+  --light-text: #2F4F4F;
+  --light-text-secondary: #4F6F6F;
+  --light-accent: #FA8072;
+  --light-border: #E0E0E0;
+  --light-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Dark Theme */
+  --dark-background: #1a1a1a;
+  --dark-surface: #2d2d2d;
+  --dark-card: #363636;
+  --dark-text: #FFFFFF;
+  --dark-text-secondary: #CCCCCC;
+  --dark-accent: #98FF98;
+  --dark-border: #404040;
+  --dark-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Light Theme Default */
+:root {
+  --background: var(--light-background);
+  --surface: var(--light-surface);
+  --card: var(--light-card);
+  --text: var(--light-text);
+  --text-secondary: var(--light-text-secondary);
+  --accent: var(--light-accent);
+  --border: var(--light-border);
+  --shadow: var(--light-shadow);
+}
+
+/* Dark Theme Class */
+.dark-theme {
+  --background: var(--dark-background);
+  --surface: var(--dark-surface);
+  --card: var(--dark-card);
+  --text: var(--dark-text);
+  --text-secondary: var(--dark-text-secondary);
+  --accent: var(--dark-accent);
+  --border: var(--dark-border);
+  --shadow: var(--dark-shadow);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Styles */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--surface);
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 10px var(--shadow);
+}
+
+.nav-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo span {
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--accent);
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.mobile-nav-toggle:hover {
+  color: var(--accent);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--surface);
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 2px 10px var(--shadow);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-link::after {
+    bottom: -2px;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Common styles */
+.highlight {
+  color: var(--accent);
+}
+
+.container {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--background);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--hover);
+  transform: translateY(-2px);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover);
+}
+
+#Home1 {
+  text-align: center;
+}
+#Nav {
+  position: sticky;
+  top: 0;
+}
+
+#Di{
+  width: 98vw;
+  margin-top: 20vh;
+  margin-left: 1vw;
+}

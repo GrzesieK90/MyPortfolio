@@ -1,0 +1,62 @@
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--text);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  transform: scale(1.1);
+}
+
+.theme-toggle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--surface);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover::before {
+  opacity: 1;
+}
+
+.theme-toggle svg {
+  transition: transform 0.5s ease;
+}
+
+.theme-toggle.dark svg {
+  transform: rotate(360deg);
+}
+
+/* Animation for icon switch */
+@keyframes iconSwitch {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.theme-toggle.switching svg {
+  animation: iconSwitch 0.5s ease;
+}

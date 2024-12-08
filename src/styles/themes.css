@@ -1,0 +1,52 @@
+:root {
+  /* Light Theme */
+  --light-background: #FFE4E1; /* Soft Peach */
+  --light-surface: #FFF5EE; /* Seashell */
+  --light-accent: #FA8072; /* Salmon Pink */
+  --light-text: #2F4F4F; /* Dark Slate Gray */
+  --light-text-secondary: #696969; /* Dim Gray */
+  --light-shadow: rgba(0, 0, 0, 0.1);
+  --light-hover: #FFA07A; /* Light Salmon */
+  --light-card: #FFFFFF;
+  --light-border: rgba(0, 0, 0, 0.1);
+
+  /* Dark Theme */
+  --dark-background: #1a1a1a; /* Dark Charcoal */
+  --dark-surface: #2d2d2d; /* Charcoal Grey */
+  --dark-accent: #98FF98; /* Mint */
+  --dark-text: #FFFFFF;
+  --dark-text-secondary: #CCCCCC;
+  --dark-shadow: rgba(152, 255, 152, 0.2);
+  --dark-hover: #7FFF7F; /* Lighter Mint */
+  --dark-card: #363636;
+  --dark-border: rgba(152, 255, 152, 0.2);
+
+  /* Default Theme (Dark) */
+  --background: var(--dark-background);
+  --surface: var(--dark-surface);
+  --accent: var(--dark-accent);
+  --text: var(--dark-text);
+  --text-secondary: var(--dark-text-secondary);
+  --shadow: var(--dark-shadow);
+  --hover: var(--dark-hover);
+  --card: var(--dark-card);
+  --border: var(--dark-border);
+}
+
+/* Light Theme Class */
+.light-theme {
+  --background: var(--light-background);
+  --surface: var(--light-surface);
+  --accent: var(--light-accent);
+  --text: var(--light-text);
+  --text-secondary: var(--light-text-secondary);
+  --shadow: var(--light-shadow);
+  --hover: var(--light-hover);
+  --card: var(--light-card);
+  --border: var(--light-border);
+}
+
+/* Transition for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
